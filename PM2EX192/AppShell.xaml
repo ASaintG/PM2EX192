@@ -1,0 +1,15 @@
+<Shell
+    x:Class="PM2EX192.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PhotoLocationApp"
+    Shell.FlyoutBehavior="Disabled"
+    Title="PhotoLocationApp">
+
+    <TabBar>
+        <ShellContent Title="Capture" Route="CapturePage" ContentTemplate="{DataTemplate local:CapturePage}" />
+        <ShellContent Title="PhotoList" Route="PhotoListPage" ContentTemplate="{DataTemplate local:PhotoListPage}" />
+        <!-- Otras páginas aquí -->
+    </TabBar>
+
+</Shell>

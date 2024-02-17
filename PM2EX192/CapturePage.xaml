@@ -1,0 +1,16 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoLocationApp.CapturePage"
+             Title="Capture">
+
+    <StackLayout Padding="20">
+        <Button Text="Capture Photo" Clicked="CapturePhoto_Clicked" />
+        <Button Text="Get Location" Clicked="GetLocation_Clicked" />
+        <Entry Placeholder="Description" x:Name="DescriptionEntry" />
+        <Label Text="Latitude: " x:Name="LatitudeLabel" />
+        <Label Text="Longitude: " x:Name="LongitudeLabel" />
+        <Image x:Name="PhotoPreview" />
+        <Button Text="Save" Clicked="Save_Clicked" />
+    </StackLayout>
+
+</ContentPage>
