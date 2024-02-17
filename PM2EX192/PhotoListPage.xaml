@@ -3,8 +3,8 @@
              x:Class="PhotoLocationApp.PhotoListPage"
              Title="PhotoList">
     <StackLayout>
-        
-        <CollectionView x:Name="PhotoCollectionView">
+
+        <CollectionView x:Name="PhotoCollectionView" SelectionMode="Single">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid>

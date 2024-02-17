@@ -82,12 +82,13 @@ namespace PhotoLocationApp
 						Longitude = CurrentLocation.Longitude
 					};
 
+					
+					var connection = DatabaseService.GetDatabaseConnection();
 
-					var connection = await DatabaseService.GetDatabaseConnection();
-					await connection.InsertAsync(photoLocation);
+					
+					connection.Insert(photoLocation);
 
-
-
+					
 					await Shell.Current.GoToAsync("///PhotoListPage");
 				}
 				else
